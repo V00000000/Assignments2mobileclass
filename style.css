@@ -1,0 +1,82 @@
+/* "StAuth10244: I John Doe, 123456 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else." */
+/* Styling for the map container */
+#map {
+    width: 100%;
+    height: 400px;  /* Adjusted height for better mobile view */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Global styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Basic styling for buttons */
+button {
+    margin: 3px;
+}
+
+/* Card styling for the form and buttons */
+.card {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Make the page responsive */
+.container {
+    padding: 10px;
+}
+
+/* Styling for buttons */
+.btn {
+    margin: 5px 0;
+}
+
+/* Toggle button styling */
+.btn-toggle {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.btn-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Remove focus outline from buttons */
+button:focus {
+    outline: none;
+}
+
+/* Button group styling for horizontal layout */
+.btn-group {
+    display: flex; /* Changed to flex to align buttons horizontally */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between the buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Ensure the form input and select are full width */
+.form-group input,
+.form-group select {
+    width: 100%;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+    #map {
+        height: 300px;  /* Smaller map height on mobile */
+    }
+    
+    /* Buttons should stack vertically on mobile */
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%; /* Ensure buttons take full width on mobile */
+    }
+}
